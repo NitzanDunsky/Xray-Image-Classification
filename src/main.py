@@ -25,11 +25,16 @@ def main():
 
     model = create_model()
 
-    train_generator.reset()
-    validation_generator.reset()
-    model, history = train_model(model, train_generator, validation_generator, 20)
+    model, history = train_model(model, train_generator, validation_generator, 50)
 
     plot_history(history)
+
+    # Evaluate the model on the test data
+    test_loss, test_accuracy = model.evaluate(test_generator, steps=test_generator.samples // test_generator.batch_size)
+
+    # Print the results
+    print(f"Test Loss: {test_loss}")
+    print(f"Test Accuracy: {test_accuracy}")
 
 if __name__ == "__main__":
     main()

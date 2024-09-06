@@ -1,15 +1,9 @@
 import tensorflow as tf
-#from tensorboard.plugins.image.summary_v2 import image
-#from keras import preprocessing
-#from keras._tf_keras.keras.preprocessing.image import ImageDataGenerator
-#import numpy as np
-#import matplotlib.pyplot as plt
-#from tensorflow.python.ops.ragged.ragged_util import repeat
-
+from keras.src.legacy.preprocessing.image import ImageDataGenerator
 
 def data_processing(train_dir, validation_dir, test_dir ):
     # Data augmentation for training
-    train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
+    train_datagen = ImageDataGenerator(
         rescale=1. / 255,
         rotation_range=20,
         width_shift_range=0.2,
@@ -21,7 +15,7 @@ def data_processing(train_dir, validation_dir, test_dir ):
         )
 
     # For validation and testing, just rescale
-    validation_datagen = tf.keras.preprocessing.image.ImageDataGenerator(rescale=1. / 255)
+    validation_datagen = ImageDataGenerator(rescale=1. / 255)
 
     # Load training images
     train_generator = train_datagen.flow_from_directory(
