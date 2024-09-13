@@ -21,14 +21,14 @@ Additionally, it provides a Flask-based web interface for uploading images and r
 
 Features
 ----------
--Model: A classic CNN model:
-        - 3 convolutional layers + max pooling
-        - generalization enhancement with data augmentation, l2 regularizers, and dropout.
-        - a train and saved model already exists in case the user does not want to experience model training
--Training: Training pipeline with logging and custom callbacks for monitoring.
--Inference: Run inference through the command line or a Flask-based web interface.
--GUI: Easy-to-use graphical interface for uploading and predicting pneumonia using chest X-rays.
--Logging: Logs model performance, accuracy, and loss, as well as inference operations.
+- Model: A classic CNN model:                                                                                   
+        -  3 convolutional layers + max pooling                                                                
+        -  generalization enhancement with data augmentation, l2 regularizers, and dropout.                      
+        -  a train and saved model already exists in case the user does not want to experience model training                    
+- Training: Training pipeline with logging and custom callbacks for monitoring.
+- Inference: Run inference through the command line or a Flask-based web interface.
+- GUI: Easy-to-use graphical interface for uploading and predicting pneumonia using chest X-rays.
+- Logging: Logs model performance, accuracy, and loss, as well as inference operations.
 
 Installation
 ------------
