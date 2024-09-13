@@ -1,4 +1,3 @@
-import tensorflow as tf
 from keras import utils
 
 def data_processing(train_dir, validation_dir, test_dir ):
