@@ -3,13 +3,13 @@ Pneumonia Detection Using CNN
 
 Table of Contents
 ----------------
--Project Overview
--Features
--Installation
--Usage
- - Training Mode
- - Inference Mode
- - Inference with GUI
+- Project Overview                      
+- Features                            
+- Installation                            
+- Usage 
+  - Training Mode
+  - Inference Mode
+  - Inference with GUI
 -  Directory Structure
 -  Model Training Process
 
