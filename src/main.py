@@ -10,7 +10,7 @@ from threading import Timer
 log_dir = '../logs'
 
 def main():
-
+    #user arguments parsing
     parser = argparse.ArgumentParser(description='Train a model, run inference with or without GUI.')
     parser.add_argument('mode', choices=['train', 'inference', 'inference_gui'], help='Mode to run: train, inference, or inference_gui')
     parser.add_argument('--image_path', type=str, help='Path to the image for inference (required for inference mode without gui)')
